@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {"name": "customerNumber", "type": "int", "length": 4},
+    {"name": "customerName", "type": "char", "length": 40},
+    {"name": "contactLastName", "type": "char", "length": 40},
+    {"name": "contactFirstName", "type": "char", "length": 40},
+    {"name": "phone", "type": "int", "length": 20},
+    {"name": "addressLine1", "type": "char", "length": 50},
+    {"name": "addressLine2", "type": "char", "length": 50},
+    {"name": "city", "type": "char", "length": 20},
+    {"name": "state", "type": "char", "length": 20},
+    {"name": "postalCode", "type": "char", "length": 20},
+    {"name": "country", "type": "char", "length": 20},
+    {"name": "salesRepEmployeeNumber", "type": "int", "length": 6},
+    {"name": "creditLimit", "type": "float", "length": 12}
+  ],
+  "primary-key": "customerNumber",
+  "secondary-key": ["country", "salesRepEmployeeNumber"]
+}

@@ -1,0 +1,14 @@
+{
+    "fields": [
+      {"name": "employeeNumber", "type": "int", "length": 5},
+      {"name": "lastName", "type": "char", "length": 40},
+      {"name": "firstName", "type": "char", "length": 40},
+      {"name": "extension", "type": "char", "length": 6},
+      {"name": "email", "type": "char", "length": 40},
+      {"name": "officeCode", "type": "int", "length": 2},
+      {"name": "reportsTo", "type": "int", "length": 5},
+      {"name": "jobTitle", "type": "char", "length": 20}
+    ],
+    "primary-key": "employeeNumber",
+    "secondary-key": ["reportsTo", "jobTitle"]
+  }
